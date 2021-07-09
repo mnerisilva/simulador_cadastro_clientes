@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    
+}
+
+.container {
+    padding-top: 1em;
+}
+
+.rodape {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.rodape .instrucao, .botao-iniciar {
+    margin-right: 1em;
+}
+
+.painel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
+    border: solid thin rgb(43, 31, 31);
+    margin: 10px 0px;
+}
+
+#tela-1 {
+    display: none !important;
+}
+
+.wrapper-tela-2 .row-1 {
+    display: flex;
+    justify-content:space-between;
+}
+
+.wrapper-tela-2 .row-2 {
+    display: flex;
+    justify-content:center;
+}
+
+.wrapper-tela-2 .row-3 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.wrapper-tela-2 .row-1 .left {
+    width: 50%;
+    display: flex;
+    border: solid thin #ccc;
+}
+
+.wrapper-tela-2 .row-1 .hight {
+    width: 50%;
+    display: flex;
+    border: solid thin #ccc;
+}
+
+.wrapper-tela-2 .row-2 {
+    width: 100%;
+    display: flex;
+    border: solid thin #ccc;
+}
+
+.wrapper-tela-2 .row-3 {
+    width: 100%;
+    display: flex;
+    border: solid thin #ccc;
+}
