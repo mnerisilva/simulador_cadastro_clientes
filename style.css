@@ -9,6 +9,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
+    align-items: center;
     
 }
 
@@ -78,3 +79,29 @@ body {
     display: flex;
     border: solid thin #ccc;
 }
+
+.formulario {
+    padding: 1em;
+}
+
+.teclado {
+    display: flex;
+    flex-direction: column;    
+}
+
+.linha {
+    display: flex;
+    align-content:center;
+    justify-content: center; 
+}
+
+.tecla {
+    width: 42px;
+    height: 42px;
+    margin: 2px;
+}
+ .tecla-normal {
+     background: url(images/tlc1_2.png) no-repeat;
+     background-size: cover;
+
+ }
