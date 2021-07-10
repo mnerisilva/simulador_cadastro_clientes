@@ -169,3 +169,6 @@ ul.linha li {
     margin: 0;
 }
 
+.form-control {
+    border-radius: none !important;
+}
