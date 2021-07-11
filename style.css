@@ -109,6 +109,7 @@ ul.linha li {
 .tecla {
     width: 58px;
     height: 58px;
+    position: relative;
 }
  .tecla-normal {
      display: flex;
@@ -171,4 +172,28 @@ ul.linha li {
 
 .form-control {
     border-radius: none !important;
+}
+
+.mascara {
+    width: 66px;
+    height: 66px;
+    /*background-color: rgb(243, 223, 60, .5);*/
+    background-color: rgb(243, 223, 60);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    transition: opacity .5s linear;
+}
+
+
+
+.esconde {
+    transition: opacity .5s linear;
+    opacity: 0;
+}
+
+.mostra {
+    transition: opacity .5s linear;
+    opacity: 1;
 }
