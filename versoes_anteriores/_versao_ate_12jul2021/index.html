@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vendedor cadastro de Clientes</title>
+    <link rel="stylesheet" href="style.css">
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+</head>
+<body>
+
+    <section class="container">
+        <div class="simulacao">
+            <div class="tela" id="tela-1"> <!-- tela 1 -->
+                <div class="content">
+                    <div class="wrapper-tela-1">
+                        <div class="titulo"><p>Simulação</p></div>
+                        <div class="sub-titulo"><h1>Cadastro e manutenção de clientes</h1></div>
+                        <div class="enunciado">Aprenda como deve ser feito o cadastro de clientes, inserindo os dados pessoais no banco de dados.</div>
+                        <div class="painel">
+                            <div class="painel-left">
+                                <p>- Utilize o teclado virtual neste exercício, guiando-se pelas teclas luminosas</p>
+                                <p>- As teclas amarelas indicam os procedimentos adotados em cada situação</p>
+                                <p>- Você terá três chances para executar corretamente o procedimento. Na terceira tentativa, se a resposta for incorreta, mostraremos como resolver a operação.</p>
+                                <p>- No final das atividades, seu tutor vai receber um relatório do seu desempenho.</p>                        
+                            </div>
+                            <div class="painel-hight">
+                                <img style="width: 163px;margin-left: 104px;" src="images/exemplo_botao.png" alt="">                        
+                            </div>
+                        </div>
+                        <div class="rodape">
+                            <div class="instrucao">
+                                <p>Clique no botão <strong>Iniciar</strong> para<br />começar as simulações.</p>
+                            </div>
+                            <div class="botao-iniciar">
+                                <span class="btn btn-primary">iniciar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- fim tela-1 -->
+            <div class="tela" id="tela-2">
+                <div class="content">
+                    <div class="wrapper-tela-2">
+                        <div class="row-1">
+                            <div class="left">
+                                mostra animação e dados a serem copiados
+                            </div>
+                            <div class="hight">
+                                <form class="formulario">
+                                    <div class="row">
+                                        <div class="form-group col-lg-6">
+                                            <label for="nome">Nome</label>
+                                            <input type="text" class="form-control" id="nome" tabindex="1">
+                                        </div>
+                                        <div class="form-group col-lg-3">
+                                            <label for="cpf">CPF</label>
+                                            <input type="text" class="form-control" id="cpf" tabindex="2">
+                                        </div>
+                                        <div class="form-group col-lg-3">
+                                            <label for="RG">RG</label>
+                                            <input type="text" class="form-control" id="RG" tabindex="3">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="form-group col-lg-2">
+                                            <label for="nasc">Dt nasc</label>
+                                            <input type="text" class="form-control" id="nasc" tabindex="4">
+                                        </div>
+                                        <div class="form-group col-lg-5">
+                                            <label for="email">E-mail</label>
+                                            <input type="email" class="form-control" id="email" tabindex="5">
+                                        </div>
+                                        <div class="form-group col-lg-5">
+                                            <label for="fone">Telefone</label>
+                                            <input type="text" class="form-control" id="fone" tabindex="6">
+                                        </div>
+                                    </div>
+                                    <!--<button type="submit" class="btn btn-default">Send invitation</button>-->
+                                  </form>                               
+                            </div>
+                        </div>
+                        <div class="row-2">
+                            <div class="teclado">
+                                <ul class="linha linha-1">
+                                    <li class="tecla esc">Esc</li>
+                                    <li class="tecla f1">F1</li>
+                                    <li class="tecla f2">F2</li>
+                                    <li class="tecla f3">F3</li>
+                                    <li class="tecla f4">F4</li>
+                                    <li class="tecla f5">F5</li>
+                                    <li class="tecla f6">F6</li>
+                                    <li class="tecla f7">F7</li>
+                                    <li class="tecla f8">F8</li>
+                                    <li class="tecla f9">F9</li>
+                                    <li class="tecla f10">F10</li>
+                                    <li class="tecla f11">F11</li>
+                                    <li class="tecla f12">F12</li>
+                                    <li class="tecla pscr">pscr</li>
+                                    <li class="tecla scroll">Scroll</li>
+                                    <li class="tecla pause">Pause</li>
+                                </ul>
+                                <ul class="linha linha-2">
+                                    <li class="tecla aspas">"<br />'</li>
+                                    <li class="tecla t1">
+                                        !
+                                        <br />
+                                        1
+                                        <span class="mascara esconde"></span>
+                                    </li>
+                                    <li class="tecla t2">
+                                        @<br />
+                                        2
+                                        <span class="mascara"></span>
+                                    </li>
+                                    <li class="tecla 3">
+                                        3
+                                        <span class="mascara"></span>
+                                    </li>
+                                    <li class="tecla 4">4</li>
+                                    <li class="tecla 5">5</li>
+                                    <li class="tecla 6">6</li>
+                                    <li class="tecla 7">7</li>
+                                    <li class="tecla 8">8</li>
+                                    <li class="tecla 9">9</li>
+                                    <li class="tecla 0">0</li>
+                                    <li class="tecla hifen">-<br />_</li>
+                                    <li class="tecla mais">+<br />=</li>
+                                    <li class="tecla back">Backspace</li>
+                                    <li class="tecla ins">Insert</li>
+                                    <li class="tecla home">Home</li>
+                                    <li class="tecla pageup">Page<br />Up</li>
+                                    <li class="tecla numlock">Num<br />Lock</li>
+                                    <li class="tecla barra">/</li>
+                                    <li class="tecla asterisco">*</li>
+                                    <li class="tecla menos">-</li>
+                                </ul>
+                                <ul class="linha linha-3">
+                                    <li class="tecla aspas">"<br />'</li>
+                                    <li class="tecla 1">!<br />1</li>
+                                    <li class="tecla 2">@<br />2</li>
+                                    <li class="tecla 3">3</li>
+                                    <li class="tecla 4">4</li>
+                                    <li class="tecla 5">5</li>
+                                    <li class="tecla 6">6</li>
+                                    <li class="tecla 7">7</li>
+                                    <li class="tecla 8">8</li>
+                                    <li class="tecla 9">9</li>
+                                    <li class="tecla 0">0</li>
+                                    <li class="tecla hifen">-<br />_</li>
+                                    <li class="tecla mais">+<br />=</li>
+                                    <li class="tecla back">Backspace</li>
+                                    <li class="tecla ins">Insert</li>
+                                    <li class="tecla home">Home</li>
+                                    <li class="tecla pageup">Page<br />Up</li>
+                                    <li class="tecla numlock">Num<br />Lock</li>
+                                    <li class="tecla barra">/</li>
+                                    <li class="tecla asterisco">*</li>
+                                    <li class="tecla menos">-</li>
+                                </ul>
+                                <ul class="linha linha-4">
+                                    <li class="tecla esc">Esc</li>
+                                    <li class="tecla f1">F1</li>
+                                    <li class="tecla f2">F2</li>
+                                    <li class="tecla f3">F3</li>
+                                    <li class="tecla f4">F4</li>
+                                    <li class="tecla f5">F5</li>
+                                    <li class="tecla f6">F6</li>
+                                    <li class="tecla f7">F7</li>
+                                    <li class="tecla f8">F8</li>
+                                    <li class="tecla f9">F9</li>
+                                    <li class="tecla f10">F10</li>
+                                    <li class="tecla f11">F11</li>
+                                    <li class="tecla f12">F12</li>
+                                    <li class="tecla pscr">pscr</li>
+                                    <li class="tecla scroll">Scroll</li>
+                                    <li class="tecla pause">Pause</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row-3">
+                            <button class="btn btn-default" id="bt-proximo-campo">Próximo Campo</button>
+                            menu inferior ao teclado
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<script type="text/javascript" src="js/jquery-2.2.2.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script src="script.js"></script>    
+</body>
+</html>
