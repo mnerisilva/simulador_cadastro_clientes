@@ -28,6 +28,9 @@ let backspace = function(){
 }
 
 let tecla_1 = function(){
+    let _this = this;
+    _this.style.backgroundImage = "url('images/tlc1_2.png')";
+    setTimeout(function(){_this.style.backgroundImage = "url('images/tlc1.png')";},200)
     const todos = document.querySelectorAll('input');
     todos.forEach(function(elem){
         if(!elem.disabled){
