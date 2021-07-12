@@ -40,7 +40,17 @@ body {
 }
 
 #tela-1 {
-    display: none !important;
+    position: absolute;
+    z-index: 3;
+    background-color: rgb(255 255 255) !important;
+    padding: 3em;
+    box-shadow: 2px 2px 5px 5px #ddd;
+    overflow: hidden;
+}
+
+#tela-2 {
+    z-index: 2;
+    background-color: rgb(241, 240, 234) !important;
 }
 
 .wrapper-tela-2 .row-1 {
@@ -114,6 +124,13 @@ ul.linha li {
     position: relative;
     color: rgb(31, 29, 29);
     font-weight: bold;
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
 }
  .tecla-normal {
      display: flex;
@@ -151,7 +168,7 @@ ul.linha li {
     color: #999;
 }
 
-.esc, .aspas {
+.esc, .aspas, .tab {
     margin-left: 13px;
 }
 .f1, .f5 {    
@@ -168,6 +185,21 @@ ul.linha li {
     background-image: url(images/tlc3.png) !important;
     margin-right: 10px;    
     background-size: contain;
+}
+
+.tab {
+    width: 71px;
+    height: 41px;
+    background-image: url(images/tlc3.png) !important;
+    background-size: contain;
+}
+
+.enter {
+    width: 95px;
+    height: 118px;
+    background-image: url(images/tlc2.png) !important;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 .linha-2, .linha-3, .linha-3 {
@@ -201,4 +233,13 @@ ul.linha li {
 .mostra {
     transition: opacity .5s linear;
     opacity: 1;
+}
+
+.esconde-tela-1 {
+    transition: opacity, height .5 linear;
+    opacity: 0;
+    height: 0;
+    width: 0;
+    z-index: 1 !important;
+    padding: 0;
 }

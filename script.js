@@ -4,6 +4,28 @@ let elementoInput;
 let arrayProximoCampo = [0, 1, 2, 3, 4, 5];
 const bt_proximo_campo = document.getElementById('bt-proximo-campo');
 const todos = document.querySelectorAll('input');
+const tecla = document.querySelector('.t1');
+const teclas = document.querySelectorAll('.tecla');
+const tela_1 = document.getElementById('tela-1');
+const botao_iniciar = document.getElementById('bt-iniciar');
+
+teclas.forEach((tecla) => {
+    tecla.addEventListener('click', trataEventoClickTeclas);
+});
+
+function trataEventoClickTeclas(){
+    console.log('ENTROU NA FUNCAO trataEventoClickTeclas')
+    const _this = this;
+    const _tecla = _this.dataset.tecla;
+    const _valor = _this.dataset.valor;
+
+    if(_tecla === "Backspace"){
+        backspace();
+    } else {
+        trataTecla(_this, _tecla, _valor);        
+    }    
+}
+
 
 desabilitaTodosOsCampos();
 
@@ -14,9 +36,6 @@ let backspace = function(){
         }
     });
     field = elemento;
-    //retornaCampoEmFoco();
-    //field.textContent = "";
-    //field.value = "";
     let tamanhoConteudoDoCampo = field.value.length;
     let novoConteudoDoCampo = '';
     if(tamanhoConteudoDoCampo > 0){
@@ -27,38 +46,47 @@ let backspace = function(){
     field.value = novoConteudoDoCampo;
 }
 
-let tecla_1 = function(){
-    let _this = this;
+let trataTecla = function(_this, _tecla, vlr){
+    console.log('entrou na funcção trataTecla da tecla_'+vlr);
     _this.style.backgroundImage = "url('images/tlc1_2.png')";
     setTimeout(function(){_this.style.backgroundImage = "url('images/tlc1.png')";},200)
     const todos = document.querySelectorAll('input');
     todos.forEach(function(elem){
         if(!elem.disabled){
-            //return elementoImput;
             elemento = elem;
         }
     });
     field = elemento;
-    //retornaCampoEmFoco();
-    field.textContent += "1";
-    field.value += "1";
+    field.textContent += vlr;
+    field.value += vlr;
 }
 
-let tecla_2 = function(){
-    field.textContent += "2";
-    field.value += "2";
-}
 
-//window.addEventListener('DOMContentLoaded', function(){
-    const nome_field = document.getElementById("nome");
-    const t1 = document.querySelector(".t1");
-    const t2 = document.querySelector(".t2");
-    const back = document.querySelector(".back");
-    t1.addEventListener('click', tecla_1);
-    t2.addEventListener('click', tecla_2);
-    back.addEventListener('click', backspace);
-    bt_proximo_campo.addEventListener('click', proximoCampo);
-///});
+
+botao_iniciar.addEventListener('click', () => {
+    tela_1.classList.add('esconde-tela-1');
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 let retornaCampoEmFoco = function (){
