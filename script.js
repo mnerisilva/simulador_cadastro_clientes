@@ -18,6 +18,12 @@ setTimeout(() => {
     });    
 }, 10000);
 
+/*setTimeout(() => {
+    arrayMasdCampo1.forEach(function(elemento){
+        elemento.style.opacity = 5;
+    });    
+}, 15000);*/
+
 
 teclas.forEach((tecla) => {
     tecla.addEventListener('click', trataEventoClickTeclas);
@@ -32,6 +38,7 @@ function trataEventoClickTeclas(){
     if(_tecla === "Backspace"){
         backspace();
     } else {
+        console.log(_this);
         trataTecla(_this, _tecla, _valor);        
     }    
 }
