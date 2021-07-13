@@ -48,6 +48,14 @@ body {
     overflow: hidden;
 }
 
+#nome {
+    text-transform: capitalize;
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+
+
 #tela-2 {
     z-index: 2;
     background-color: rgb(241, 240, 234) !important;
@@ -105,12 +113,18 @@ body {
     flex-direction: column;
     width: 100%;
     background-color: #9b9b9b;
+    height: 450px;
 }
 
 .linha {
     display: flex;
     list-style: none;
     justify-content: end;
+}
+
+.linha-4 {    
+    margin-top: -60px;
+    margin-bottom: 0 !important;
 }
 
 ul.linha li {
@@ -168,11 +182,19 @@ ul.linha li {
     color: #999;
 }
 
-.esc, .aspas, .tab {
+.esc, .aspas, .tab, .caps {
     margin-left: 13px;
 }
 .f1, .f5 {    
     margin-left: 54px;
+}
+
+.caps {
+    width: 89px;
+    background-image: url(images/tlc3.png) !important;
+    background-size: 89px 58px;
+    background-repeat: no-repeat;
+
 }
 
 .pscr,.numlock {
@@ -180,18 +202,17 @@ ul.linha li {
 }
 
 .back {
-    width: 106px;
-    height: 58px;
+    width: 115px;
     background-image: url(images/tlc3.png) !important;
-    margin-right: 10px;    
-    background-size: contain;
+    background-size: 107px 59px;
+    background-repeat: no-repeat;
 }
 
 .tab {
     width: 71px;
-    height: 41px;
     background-image: url(images/tlc3.png) !important;
-    background-size: contain;
+    background-size: 71px 58px;
+    background-repeat: no-repeat;
 }
 
 .enter {
@@ -200,11 +221,26 @@ ul.linha li {
     background-image: url(images/tlc2.png) !important;
     background-size: cover;
     background-repeat: no-repeat;
+    margin-right: 10px;
+}
+
+.pgpn {
+    margin-right: 11px;
+}
+
+.insert {    
+    margin-left: 2px;
+}
+
+.tn4 {
+    margin-left: 274px;
 }
 
 .linha-2, .linha-3, .linha-3 {
     margin: 0;
 }
+
+
 
 .form-control {
     border-radius: none !important;

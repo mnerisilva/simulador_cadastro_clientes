@@ -85,21 +85,21 @@
                             <div class="teclado">
                                 <ul class="linha linha-1">
                                     <li class="tecla esc">Esc</li>
-                                    <li class="tecla f1">F1</li>
-                                    <li class="tecla f2">F2</li>
-                                    <li class="tecla f3">F3</li>
-                                    <li class="tecla f4">F4</li>
-                                    <li class="tecla f5">F5</li>
-                                    <li class="tecla f6">F6</li>
-                                    <li class="tecla f7">F7</li>
-                                    <li class="tecla f8">F8</li>
-                                    <li class="tecla f9">F9</li>
-                                    <li class="tecla f10">F10</li>
-                                    <li class="tecla f11">F11</li>
-                                    <li class="tecla f12">F12</li>
-                                    <li class="tecla pscr">pscr</li>
-                                    <li class="tecla scroll">Scroll</li>
-                                    <li class="tecla pause">Pause</li>
+                                    <li class="tecla f1" data-tecla="f1" data-valor="">F1</li>
+                                    <li class="tecla f2" data-tecla="f2" data-valor="">F2</li>
+                                    <li class="tecla f3" data-tecla="f3" data-valor="">F3</li>
+                                    <li class="tecla f4" data-tecla="f4" data-valor="">F4</li>
+                                    <li class="tecla f5" data-tecla="f5" data-valor="">F5</li>
+                                    <li class="tecla f6" data-tecla="f6" data-valor="">F6</li>
+                                    <li class="tecla f7" data-tecla="f7" data-valor="">F7</li>
+                                    <li class="tecla f8" data-tecla="f8" data-valor="">F8</li>
+                                    <li class="tecla f9" data-tecla="f9" data-valor="">F9</li>
+                                    <li class="tecla f10" data-tecla="f10" data-valor="">F10</li>
+                                    <li class="tecla f11" data-tecla="f11" data-valor="">F11</li>
+                                    <li class="tecla f12" data-tecla="f12" data-valor="">F12</li>
+                                    <li class="tecla pscr" data-tecla="pscr" data-valor="">Print<br />Screen</li>
+                                    <li class="tecla scroll" data-tecla="scroll" data-valor="">Scroll<br />Lock</li>
+                                    <li class="tecla pause" data-tecla="pause" data-valor="">Pause</li>
                                 </ul>
                                 <ul class="linha linha-2">
                                     <li class="tecla aspas">"<br />'</li>
@@ -113,16 +113,16 @@
                                     <li class="tecla 8" data-tecla="8" data-valor="8">8<span class="mascara esconde"></span></li>
                                     <li class="tecla 9" data-tecla="9" data-valor="9">9<span class="mascara esconde"></span></li>
                                     <li class="tecla 0" data-tecla="0" data-valor="0">0<span class="mascara esconde"></span></li>
-                                    <li class="tecla hifen">-<br />_</li>
-                                    <li class="tecla mais">+<br />=</li>
+                                    <li class="tecla hifen" data-tecla="hifen" data-valor="-">-<br />_</li>
+                                    <li class="tecla mais" data-tecla="mais" data-valor="+">+<br />=</li>
                                     <li class="tecla back" data-tecla="Backspace" data-valor="">Backspace</li>
-                                    <li class="tecla ins">Insert</li>
-                                    <li class="tecla home">Home</li>
-                                    <li class="tecla pageup">Page<br />Up</li>
-                                    <li class="tecla numlock">Num<br />Lock</li>
-                                    <li class="tecla barra">/</li>
-                                    <li class="tecla asterisco">*</li>
-                                    <li class="tecla menos">-</li>
+                                    <li class="tecla insert" data-tecla="insert" data-valor="">Insert</li>
+                                    <li class="tecla home" data-tecla="home" data-valor="">Home</li>
+                                    <li class="tecla pageup" data-tecla="pageup" data-valor="">Page<br />Up</li>
+                                    <li class="tecla numlock" data-tecla="numlock" data-valor="">Num<br />Lock</li>
+                                    <li class="tecla tn-barra" data-tecla="tn-barra" data-valor="/">/</li>
+                                    <li class="tecla tn-asterisco" data-tecla="tn-asterisco" data-valor="*">*</li>
+                                    <li class="tecla tn-hifem" data-tecla="tn-hifem" data-valor="-">-</li>
                                 </ul>
                                 <ul class="linha linha-3">
                                     <li class="tecla tab" data-tecla="tab" data-valor="">⇤<br /> ⇥</li>
@@ -137,34 +137,55 @@
                                     <li class="tecla o" data-tecla="o" data-valor="o">O</li>
                                     <li class="tecla p" data-tecla="p" data-valor="p">P</li>
                                     <li class="tecla grave-agudo" data-tecla="grave-agudo" data-valor="">`<br />´</li>
-                                    <li class="tecla chave-colchete" data-tecla="chave-colchete" data-valor="">{<br />[</li>
+                                    <li class="tecla chave-colchete-abre" data-tecla="chave-colchete-abre" data-valor="[">{<br />[</li>
                                     <li class="tecla enter" data-tecla="enter" data-valor="">Enter</li>
-                                    <li class="tecla delete">Delete</li>
-                                    <li class="tecla end">End</li>
-                                    <li class="tecla pgpn">PgPn</li>
-                                    <li class="tecla 7">7</li>
-                                    <li class="tecla 8">8</li>
-                                    <li class="tecla 9">9</li>
-                                    <li class="tecla +">+</li>
+                                    <li class="tecla delete" data-tecla="delete" data-valor="">Delete</li>
+                                    <li class="tecla end" data-tecla="end" data-valor="">End</li>
+                                    <li class="tecla pgpn" data-tecla="pgpn" data-valor="">PgDn</li>
+                                    <li class="tecla tn7" data-tecla="tn7" data-valor="7">7</li>
+                                    <li class="tecla tn8" data-tecla="tn8" data-valor="8">8</li>
+                                    <li class="tecla tn9" data-tecla="tn9" data-valor="9">9</li>
+                                    <li class="tecla sinal-mais" data-tecla="tn-mais" data-valor="+">+</li>
                                 </ul>
-                                <ul class="linha linha-4" style="display: none;">
-                                    <li class="tecla esc">Esc</li>
-                                    <li class="tecla f1">F1</li>
-                                    <li class="tecla f2">F2</li>
-                                    <li class="tecla f3">F3</li>
-                                    <li class="tecla f4">F4</li>
-                                    <li class="tecla f5">F5</li>
-                                    <li class="tecla f6">F6</li>
-                                    <li class="tecla f7">F7</li>
-                                    <li class="tecla f8">F8</li>
-                                    <li class="tecla f9">F9</li>
-                                    <li class="tecla f10">F10</li>
-                                    <li class="tecla f11">F11</li>
-                                    <li class="tecla f12">F12</li>
-                                    <li class="tecla pscr">pscr</li>
-                                    <li class="tecla scroll">Scroll</li>
-                                    <li class="tecla pause">Pause</li>
+                                <ul class="linha linha-4">
+                                    <li class="tecla caps" data-tecla="caps-lock" data-valor="">Caps<br />Lock</li>
+                                    <li class="tecla a" data-tecla="a" data-valor="a">A</li>
+                                    <li class="tecla s" data-tecla="s" data-valor="s">S</li>
+                                    <li class="tecla d" data-tecla="d" data-valor="d">D</li>
+                                    <li class="tecla f" data-tecla="f" data-valor="f">F</li>
+                                    <li class="tecla g" data-tecla="g" data-valor="g">G</li>
+                                    <li class="tecla h" data-tecla="h" data-valor="h">H</li>
+                                    <li class="tecla j" data-tecla="j" data-valor="j">J</li>
+                                    <li class="tecla k" data-tecla="k" data-valor="k">K</li>
+                                    <li class="tecla l" data-tecla="l" data-valor="l">L</li>
+                                    <li class="tecla c-" data-tecla="c-" data-valor="ç">Ç</li>
+                                    <li class="tecla ciucun-til" data-tecla="ciucun-til" data-valor="">^<br />~</li>
+                                    <li class="tecla chave-colchete-fecha" data-tecla="chave-colchete-fecha" data-valor="]">}<br />]</li>
+                                    <li class="tecla tn4" data-tecla="tn4" data-valor="4">4</li>
+                                    <li class="tecla tn5" data-tecla="tn5" data-valor="5">5</li>
+                                    <li class="tecla tn6" data-tecla="tn6" data-valor="6">6</li>
+                                    <li class="tecla tn-ponto" data-tecla="tn-ponto" data-valor=".">.</li>
                                 </ul>
+                            </ul>
+                            <ul class="linha linha-5">
+                                <li class="tecla caps" data-tecla="caps-lock" data-valor="">Caps<br />Lock</li>
+                                <li class="tecla a" data-tecla="a" data-valor="a">A</li>
+                                <li class="tecla s" data-tecla="s" data-valor="s">S</li>
+                                <li class="tecla d" data-tecla="d" data-valor="d">D</li>
+                                <li class="tecla f" data-tecla="f" data-valor="f">F</li>
+                                <li class="tecla g" data-tecla="g" data-valor="g">G</li>
+                                <li class="tecla h" data-tecla="h" data-valor="h">H</li>
+                                <li class="tecla j" data-tecla="j" data-valor="j">J</li>
+                                <li class="tecla k" data-tecla="k" data-valor="k">K</li>
+                                <li class="tecla l" data-tecla="l" data-valor="l">L</li>
+                                <li class="tecla c-" data-tecla="c-" data-valor="ç">Ç</li>
+                                <li class="tecla ciucuntil" data-tecla="ciucuntil" data-valor="">^<br />~</li>
+                                <li class="tecla chaveco" data-tecla="chaveco" data-valor="]">}<br />]</li>
+                                <li class="tecla tn4" data-tecla="tn4" data-valor="4">4</li>
+                                <li class="tecla tn5" data-tecla="tn5" data-valor="5">5</li>
+                                <li class="tecla tn6" data-tecla="tn6" data-valor="6">6</li>
+                                <li class="tecla tn-ponto" data-tecla="tn-ponto" data-valor=".">.</li>
+                            </ul>
                             </div>
                         </div>
                         <div class="row-3">
