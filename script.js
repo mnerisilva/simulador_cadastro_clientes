@@ -9,6 +9,8 @@ const teclas = document.querySelectorAll('.tecla');
 const tela_1 = document.getElementById('tela-1');
 const botao_iniciar = document.getElementById('bt-iniciar');
 
+const array
+
 teclas.forEach((tecla) => {
     tecla.addEventListener('click', trataEventoClickTeclas);
 });
