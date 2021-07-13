@@ -9,7 +9,15 @@ const teclas = document.querySelectorAll('.tecla');
 const tela_1 = document.getElementById('tela-1');
 const botao_iniciar = document.getElementById('bt-iniciar');
 
-const array
+const arrayMasdCampo1 = document.querySelectorAll('.maskCampo1');
+console.log(arrayMasdCampo1);
+
+setTimeout(() => {
+    arrayMasdCampo1.forEach(function(elemento){
+        elemento.classList.add('mascara');
+    });    
+}, 10000);
+
 
 teclas.forEach((tecla) => {
     tecla.addEventListener('click', trataEventoClickTeclas);
