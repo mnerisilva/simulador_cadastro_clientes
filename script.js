@@ -8,6 +8,15 @@ const tecla = document.querySelector('.t1');
 const teclas = document.querySelectorAll('.tecla');
 const tela_1 = document.getElementById('tela-1');
 const botao_iniciar = document.getElementById('bt-iniciar');
+const campoNome = document.getElementById('nome');
+
+
+/*
+cpf.setAttribute("disabled", false) // desabilita cpf
+undefined
+cpf.removeAttribute("disabled") // habilita campo cpf
+undefined
+*/
 
 const arrayMasdCampo1 = document.querySelectorAll('.maskCampo1');
 console.log(arrayMasdCampo1);
@@ -15,7 +24,8 @@ console.log(arrayMasdCampo1);
 setTimeout(() => {
     arrayMasdCampo1.forEach(function(elemento){
         elemento.classList.add('mascara');
-    });    
+    });
+    campoNome.focus(); 
 }, 2000);
 
 /*setTimeout(() => {
@@ -81,6 +91,7 @@ let trataTecla = function(_this, _tecla, vlr){
     field = elemento;
     field.textContent += vlr;
     field.value += vlr;
+    field.focus();
 }
 
 
