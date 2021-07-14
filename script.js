@@ -9,6 +9,7 @@ const teclas = document.querySelectorAll('.tecla');
 const tela_1 = document.getElementById('tela-1');
 const botao_iniciar = document.getElementById('bt-iniciar');
 const campoNome = document.getElementById('nome');
+const balao = document.querySelector('.balao');
 
 
 
@@ -19,6 +20,10 @@ const campoNome = document.getElementById('nome');
 //gsap.to("#animacao", {x: 770, duration: 2});
 
 gsap.from("#animacao", {duration: 2, x: 800, opacity: 0, scale: 0.5});
+
+setTimeout(function(){
+    balao.style.opacity = 1;
+},2500);
 
 const arrayMasdCampo1 = document.querySelectorAll('.maskCampo1');
 console.log(arrayMasdCampo1);
