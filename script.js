@@ -10,18 +10,15 @@ const tela_1 = document.getElementById('tela-1');
 const botao_iniciar = document.getElementById('bt-iniciar');
 const campoNome = document.getElementById('nome');
 
-const canvas = document.getElementById('#animacao');
-const ctx = canvas.getContext('2d');
 
 
 
 
-/*
-cpf.setAttribute("disabled", false) // desabilita cpf
-undefined
-cpf.removeAttribute("disabled") // habilita campo cpf
-undefined
-*/
+
+
+//gsap.to("#animacao", {x: 770, duration: 2});
+
+gsap.from("#animacao", {duration: 2, x: 800, opacity: 0, scale: 0.5});
 
 const arrayMasdCampo1 = document.querySelectorAll('.maskCampo1');
 console.log(arrayMasdCampo1);

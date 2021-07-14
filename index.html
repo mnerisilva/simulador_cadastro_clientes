@@ -7,12 +7,13 @@
     <title>Vendedor cadastro de Clientes</title>
     <link rel="stylesheet" href="style.css">
     <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.0/gsap.min.js"></script>
 </head>
 <body>
 
     <section class="container">
         <div class="simulacao">
-            <div class="tela" id="tela-1"> <!-- tela 1 -->
+            <div class="tela" id="tela-1" style="display: none;"> <!-- tela 1 -->
                 <div class="content">
                     <div class="wrapper-tela-1">
                         <div class="titulo"><p>Simulação</p></div>
@@ -45,7 +46,12 @@
                     <div class="wrapper-tela-2">
                         <div class="row-1">
                             <div class="left">
-                                <canvas id="animacao"></canvas>
+                                <section id="animacao">
+                                    <img src="images/balao.png" alt="" class="balao">
+                                    <div class="img">
+                                        <img src="images/cena.png" alt="">
+                                    </div>
+                                </section>
                             </div>
                             <div class="hight">
                                 <form class="formulario">

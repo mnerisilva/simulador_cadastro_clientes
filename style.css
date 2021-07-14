@@ -9,7 +9,7 @@ body {
     height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
+    /*align-items: center;*/
     background-color:rgb(241, 240, 234) !important;
     
 }
@@ -78,9 +78,19 @@ body {
 }
 
 .wrapper-tela-2 .row-1 .left {
+    height: 535px;
+    position: relative;
     width: 50%;
     display: flex;
     border: solid thin #ccc;
+    overflow: hidden;
+    background-color: #bdecff;
+}
+
+.wrapper-tela-2 .row-1 .left #animacao {
+    position: absolute;
+    margin-left: 10px;
+    height: 100%;;
 }
 
 .wrapper-tela-2 .row-1 .hight {
@@ -342,7 +352,7 @@ ul.linha li {
     left: 0;
     z-index: 2;
     transition: opacity .5s linear;
-    opacity: .5;
+    opacity: .5
 }
 
 
@@ -364,4 +374,19 @@ ul.linha li {
     width: 0;
     z-index: 1 !important;
     padding: 0;
+}
+
+canvas {
+    width: 700px;
+    height: 450px;
+    border: solid thin #ccc;
+}
+
+.balao {
+    position: absolute;
+    width: 250px;
+    height: 150px;
+    margin-left: 223px;
+    margin-top: 41px;
+    opacity: 0;
 }
