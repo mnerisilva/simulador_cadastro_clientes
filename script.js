@@ -16,7 +16,7 @@ setTimeout(() => {
     arrayMasdCampo1.forEach(function(elemento){
         elemento.classList.add('mascara');
     });    
-}, 10000);
+}, 2000);
 
 /*setTimeout(() => {
     arrayMasdCampo1.forEach(function(elemento){
@@ -38,8 +38,13 @@ function trataEventoClickTeclas(){
     if(_tecla === "Backspace"){
         backspace();
     } else {
-        console.log(_this);
-        trataTecla(_this, _tecla, _valor);        
+        if(_this.querySelector('span') != null){
+            if(!_this.querySelector('span').classList.contains('maskCampo1')){
+                alert('Tecla não disponível para esta operação;');
+            } else {
+                trataTecla(_this, _tecla, _valor);
+            }
+        }     
     }    
 }
 
