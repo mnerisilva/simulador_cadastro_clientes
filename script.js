@@ -10,6 +10,11 @@ const tela_1 = document.getElementById('tela-1');
 const botao_iniciar = document.getElementById('bt-iniciar');
 const campoNome = document.getElementById('nome');
 
+const canvas = document.getElementById('#animacao');
+const ctx = canvas.getContext('2d');
+
+
+
 
 /*
 cpf.setAttribute("disabled", false) // desabilita cpf
@@ -76,18 +81,20 @@ let backspace = function(){
     //let novoConteudoCampo = backspaceLimpa(field.textContent);
     field.textContent = novoConteudoDoCampo;
     field.value = novoConteudoDoCampo;
+    field.focus();
 }
 
 let trataTecla = function(_this, _tecla, vlr){
     console.log('entrou na funcção trataTecla da tecla_'+vlr);
     _this.style.backgroundImage = "url('images/tlc1_2.png')";
     setTimeout(function(){_this.style.backgroundImage = "url('images/tlc1.png')";},200)
-    const todos = document.querySelectorAll('input');
+    /*const todos = document.querySelectorAll('input');
     todos.forEach(function(elem){
         if(!elem.disabled){
             elemento = elem;
         }
-    });
+    });*/
+    todos[retornaIndiceCampoEmFoco()];
     field = elemento;
     field.textContent += vlr;
     field.value += vlr;
@@ -99,6 +106,19 @@ let trataTecla = function(_this, _tecla, vlr){
 botao_iniciar.addEventListener('click', () => {
     tela_1.classList.add('esconde-tela-1');
 });
+
+function retornaIndiceCampoEmFoco(){
+    const todos = document.querySelectorAll('input');
+    let campoAtual;
+    todos.forEach(function(elem, index){
+        if(!elem.disabled){
+            elemento = elem;
+            console.log('index: '+index);
+            campoAtual = index;
+        }
+    });    
+    return campoAtual;  
+}
 
 
 
