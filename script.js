@@ -25,7 +25,7 @@ gsap.to(".capa", {delay: 2, x: 650, duration: 2, opacity: 1});
 
 setTimeout(function(){
     balao.style.opacity = 1;
-},2500);
+}, 5000);
 
 const arrayMasdCampo1 = document.querySelectorAll('.maskCampo1');
 console.log(arrayMasdCampo1);
