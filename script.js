@@ -17,9 +17,11 @@ const balao = document.querySelector('.balao');
 
 
 
-//gsap.to("#animacao", {x: 770, duration: 2});
+
 
 gsap.from("#animacao", {duration: 2, x: 800, opacity: 0, scale: 0.5});
+
+gsap.to(".capa", {delay: 2, x: 650, duration: 2, opacity: 1});
 
 setTimeout(function(){
     balao.style.opacity = 1;

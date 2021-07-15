@@ -382,11 +382,35 @@ canvas {
     border: solid thin #ccc;
 }
 
+
+.capa {
+    width: 200px;
+    height: 90px;
+    background-color: rgba(100, 148, 237, 0.363);
+    font-size: 1.2em;
+    padding: 10px;
+    text-align: center;
+    position: absolute;
+    left: -650px;
+    opacity: 0;
+}
+
 .balao {
     position: absolute;
-    width: 250px;
+    width: 188px;
     height: 150px;
-    margin-left: 223px;
-    margin-top: 41px;
+    margin-left: 264px;
+    margin-top: 54px;
     opacity: 0;
+    background: url('images/balao.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.balao-conteudo {
+    position: inherit;
+    width: inherit;
+    height: inherit;
+    padding: 2em;
 }
