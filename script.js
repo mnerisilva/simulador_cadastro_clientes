@@ -13,7 +13,14 @@ const balao = document.querySelector('.balao');
 
 
 
-
+document.addEventListener('keydown', function(e){
+    console.log(e.key);
+    if(e.key === 'Enter'){
+        if(todos[retornaIndiceCampoEmFoco()].value == '' ){
+            alert('você precisa preencher este campo!');
+        }
+    }
+});
 
 
 
@@ -24,6 +31,8 @@ gsap.from("#animacao", {duration: 2, x: 800, opacity: 0, scale: 0.5});
 gsap.to(".capa", {delay: 2, x: 650, duration: 2, opacity: 1});
 
 setTimeout(function(){
+    //balao.style.opacity = 1;
+    balao.style.transition = 'opacity .5s easy';
     balao.style.opacity = 1;
 }, 5000);
 
@@ -53,6 +62,8 @@ function trataEventoClickTeclas(){
     const _this = this;
     const _tecla = _this.dataset.tecla;
     const _valor = _this.dataset.valor;
+
+    //if()
 
     if(_tecla === "Backspace"){
         backspace();
